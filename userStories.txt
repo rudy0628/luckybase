@@ -1,0 +1,65 @@
+1. As a user, i want to click the button to hit
+    user click the hit button, and give the random result(out, hit, homerun, fourball)
+2. As a user, i want to see what result after i hit
+    1 base, 2 base, 3 base, 1 2base, 1 3base, 2 3base,123 base, 0base 
+    1 base: 
+        1base-hit : 1 2
+        2base-hit : 1 3
+        3base-hit : 3, score + 1
+        homerun : 0, score + 2
+        out : 1
+        fourball : 1 2
+    2 base:
+        1base-hit : 1 3
+        2base-hit : 2, score + 1
+        3base-hit : 3, score + 1
+        homerun : 0, score + 2
+        out : 2
+        fourball : 1 2
+    3 base:
+        1base-hit : 1, score + 1
+        2base-hit : 2, score + 1
+        3base-hit : 3, score + 1
+        homerun : 0, score + 2
+        out : 3
+        fourball : 1 3
+    1 2base:
+        1base-hit: 1 2 3
+        2base-hit: 2 3, score + 1
+        3base-hit: 3, score + 2
+        homerun : 0, score + 3
+        out : 1 2
+        fourball : 1 2 3
+    1 3base:
+        1base-hit: 1 2, score + 1
+        2base-hit: 2 3, score + 1
+        3base-hit: 3, score + 2
+        homerun : 0, score + 3
+        out : 1 3
+        fourball : 1 2 3
+    2 3base:
+        1base-hit: 1 3, score + 1
+        2base-hit: 2, score + 2
+        3base-hit: 3, score + 2
+        homerun : 0, score + 3
+        out : 2 3
+        fourball : 1 2 3
+    1 2 3base:
+        1base-hit: 1 2 3, score + 1
+        2base-hit: 2 3, score + 2
+        3base-hit: 3, score + 3
+        homerun : 0, score + 4
+        out : 1 2 3
+        fourball: 1 2 3, score + 1
+    0 base:
+        1base-hit: 1
+        2base-hit: 2
+        3base-hit: 3
+        homerun : 0, score + 1
+        out: 0
+        fourball : 1
+3. As a user, i like to play only 3 inning
+    if out count is 3, then clear the base and out, change the opposite player
+4. As a user, i want to check if i win or lose
+    if the score is higher than other, than win, other, lose
+    if the score is same, draw

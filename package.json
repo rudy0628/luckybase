@@ -1,0 +1,19 @@
+{
+	"name": "luckybase",
+	"version": "1.0.0",
+	"description": "random baseball game",
+	"default": "index.html",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --no-minify index.html --out-dir ./dist"
+	},
+	"author": "rudy yeh",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.5"
+	},
+	"dependencies": {
+		"core-js": "^3.19.1",
+		"regenerator-runtime": "^0.13.9"
+	}
+}

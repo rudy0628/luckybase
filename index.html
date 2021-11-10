@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luckybase</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./js/controller.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="player--state--1 player--curr">
+            <h1 class="player--score">score : <span class="player--score--1">0</span></h1>
+            <h2 class="player--out">out : <span class=" player--out--1">0</span></h2>
+        </div>
+        <div class="baseball--statement">
+            <div class="basefield">
+                <div class="base base--1"></div>
+                <div class="base base--2"></div>
+                <div class="base base--3"></div>
+            </div>
+            <div class="player--hit">go!</div>
+            <div class="inn">inn : 1</div>
+            <button class="btn btn--hit">hit</button>
+            <button class="btn btn--reset">reset</button>
+            <button class="btn btn--rules">Rules</button>
+        </div>
+        <div class="player--state--2">
+            <h1 class="player--score">score : <span class="player--score--2">0</span></h1>
+            <h2 class="player--out">out : <span class=" player--out--2">0</span></h2>
+        </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <p class="rules">
+            <h1>Welcome to luckybase game!</h1>
+            <h2>PLAY RULES : </h2>
+            <p>1. the game work as same as real baseball game</p>
+            <p>2. when you hit, there is some random result</p>
+            <p>3. every single base will move depend on your hit result</p>
+            <p>4. this game has 3 inning, 6 half inning</p>
+            <p>5. the game winner is belongs to the higher score player</p>
+            <p>6. have a good fun!!</p>
+        </p>
+    </div>
+</body>
+</html>

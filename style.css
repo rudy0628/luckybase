@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: linear-gradient(to right, #dad299, #b0dab9);
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+	display: flex;
+	height: 65vh;
+	width: 70vw;
+	margin: 10vh auto;
+	padding: 15px 25px;
+	border-radius: 15px;
+	justify-content: space-around;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 0;
+}
+
+/* player */
+.player--state--1,
+.player--state--2 {
+	text-align: center;
+	margin: auto 0;
+	padding: 50px;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.player--score,
+.player--out {
+	font-size: 2rem;
+	color: seashell;
+	font-weight: 300;
+}
+
+.player--hit {
+	font-size: 1.5rem;
+	color: seashell;
+	font-weight: 300;
+	transform: translateY(-450%);
+}
+
+.player--curr {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.player--winner {
+	background-color: rgba(155, 25, 34, 0.5);
+}
+
+.inn {
+	font-size: 1.5rem;
+	color: seashell;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+/* baseball field */
+.baseball--statement {
+	text-align: center;
+}
+
+.basefield {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 200px;
+	width: 200px;
+	border: green 2px solid;
+	margin: 50px auto;
+	transform: rotate(135deg);
+}
+
+.base {
+	height: 40px;
+	width: 40px;
+	border: silver 2px solid;
+	transition: all 0.2s ease-in-out;
+}
+
+.base--1 {
+	grid-column: 1 / -1;
+}
+
+.base--2 {
+	margin-top: auto;
+}
+
+.base--3 {
+	margin-left: auto;
+	margin-top: auto;
+}
+
+/* button */
+.btn {
+	margin: 5px 5px;
+	padding: 5px;
+	height: 50px;
+	width: 75px;
+	font-size: 1.2rem;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	background: linear-gradient(to right, #485563, #29323c);
+	color: seashell;
+	transition: ease-in-out 0.2s all;
+}
+
+.btn:hover {
+	background: white;
+	color: black;
+}
+
+.btn:disabled {
+	background: grey !important;
+	color: lightslategrey;
+	cursor: default;
+	pointer-events: none;
+}
+
+/* modal */
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+.hidden {
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+
+	background: white;
+	padding: 6rem;
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	z-index: 10;
+}
+
+.close-modal {
+	position: absolute;
+	top: 1.2rem;
+	right: 2rem;
+	font-size: 4rem;
+	color: #333;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
