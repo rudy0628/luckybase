@@ -161,3 +161,25 @@ body {
 	border: none;
 	background: none;
 }
+
+@media (max-width: 1168px) {
+	.container {
+		display: block;
+		height: auto;
+	}
+
+	.modal {
+		top: 75%;
+	}
+
+	.overlay {
+		height: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.modal {
+		width: 50%;
+		top: 50%;
+	}
+}
